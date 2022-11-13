@@ -1,0 +1,273 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+/* Custom properties */
+:root{
+    --primary-background-color: #FAFAFC;
+    --secondary-background-color: #F7F9FC;
+    --tertiary-background-color: #F3F3F3;
+    --text-color: #303031;
+    --text-color-alt: #8A8A8A;
+    --font-size-xsm: 1.0rem;
+    --font-size-sm: 1.2rem;
+    --font-size-md: 1.6rem;
+    --font-size-lg: 2.4rem;
+    --font-size-xl:3rem;
+    --gap: 3rem;
+    --font-family: 'Poppins', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {   
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    background-color: var(--primary-background-color);
+    color: var(--text-color);
+}
+
+.section-separation {
+    border-bottom: 2px solid var(--tertiary-background-color);
+}
+
+.container {
+    width: 85%;
+    margin: 2rem auto;
+}
+
+
+/*== HEADER ==*/
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    margin-top: var(--gap);
+}
+
+.logo {
+    font-size: var(--font-size-lg);
+}
+
+.search-form-container {
+    margin: auto;
+    display: flex;
+    gap: var(--gap);
+    margin-right: 0;
+
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.form-input,
+.form-btn {
+    background-color: var(--tertiary-background-color);
+    border: none;
+    padding: 0.7rem;
+    color: var(--text-color-alt);
+    font-weight: 200;
+}
+
+.form-input {
+    margin-right: 0;
+    width:30rem;
+    font-size: var(--font-size-xsm);
+}
+
+.form-btn {
+    margin-left: -0.5rem;
+    font-size: var(--font-size-md);
+}
+
+/* == NAVBAR == */
+
+.navbar {
+    margin-top: var(--gap);
+    font-size: var(--font-size-sm);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar-menu-icon,
+.navbar-bookmark-icon {
+    font-size: var(--font-size-md);
+    color: var(--text-color-alt);
+}
+
+.menu {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu > .list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.list-item.current {
+    font-weight: bold;
+}
+
+
+/* == Title Your Choice == */
+
+.title {
+    margin: 6rem auto 4rem auto;
+    text-align: center;
+}
+
+.title-your-choice{
+    font-size: var(--font-size-xsm);
+}
+.title-chosen-category{
+    font-size: var(--font-size-lg);
+}
+
+/* == Chosen Category Picture + Caption == */
+
+.hot-topic-section.section-separation{
+    padding-bottom: 100px;
+}
+
+.hot-topic-container.container {
+    position: relative;
+}
+
+.chosen-category-background-picture{
+    width: 100%;
+    object-fit: cover;
+}
+
+.chosen-cagetory-hot-topic-container{
+    width: 80%;
+    background-color: var(--secondary-background-color);
+    height: 120px;
+    position: absolute;
+    bottom: -60px;
+    margin-left: 10%;
+    box-shadow: 0px 2px 10px 0px lightgrey;
+    border-radius: 2px;
+}
+
+
+.chosen-cagetory-hot-topic-container {
+    padding: 2rem 5rem;
+}
+
+.hot-topic-introduction {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--font-size-xsm);
+    height: 2rem;
+}
+
+.hot-topic-circle {
+    background-color: var(--text-color);
+    border-radius: 50%;
+    height: 6px;
+    width: 6px;
+    display: inline-block;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.hot-topic-text{
+    font-weight: 700;
+    padding-left: 0.3rem;
+    padding-right: 1rem;
+}
+
+.hot-topic-spacer{
+    background-color: var(--text-color-alt);
+    height: 12px;
+    width: 0.5px;
+    display: inline-block;
+    margin-top: 0.2rem;
+}
+
+.hot-topic-category{
+    padding-left: 1rem;
+}
+
+
+.hot-topic-title{
+    margin: 1rem 0;
+    font-size: var(--font-size-md);
+}
+
+.hot-topic-data {
+    display: flex;
+    flex-direction: row;
+    color: var(--text-color-alt);
+    font-size: var(--font-size-xsm);
+}
+
+.hot-topic-author {
+    color: var(--text-color);
+    padding-right: 3rem;
+}
+
+/* == POPULAR NOW SECTION == */
+
+.title-popular-now {
+    font-size: var(--font-size-md);
+}
+
+.list-of-popular-topics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.one-popular-topic {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+}
+
+.number-of-popular-topic {
+    font-size: var(--font-size-md);
+    color: var(--text-color-alt);
+    font-weight: 700;
+    padding-right: 2rem;
+}
+
+.spacer-between-number-and-title {
+    height: 100%;
+    width: 0.5px;
+    background-color: var(--text-color-alt);
+}
+
+.popular-topic-card-right-side {
+    padding-left: 1rem;
+}
+
+.popular-topic-category {
+    margin-bottom: 0.5rem;
+
+}
+
+.popular-topic-title {
+    flex-wrap: wrap;
+}
