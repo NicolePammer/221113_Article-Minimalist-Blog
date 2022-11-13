@@ -63,11 +63,9 @@
     --tertiary-background-color: #F3F3F3;
     --text-color: #303031;
     --text-color-alt: #8A8A8A;
-    --font-size-xsm: 1.0rem;
     --font-size-sm: 1.2rem;
     --font-size-md: 1.6rem;
-    --font-size-lg: 2.4rem;
-    --font-size-xl:3rem;
+    --font-size-lg: 3.2rem;
     --gap: 3rem;
     --font-family: 'Poppins', sans-serif;
 
@@ -143,7 +141,7 @@ a{
 .form-input {
     margin-right: 0;
     width:30rem;
-    font-size: var(--font-size-xsm);
+    font-size: var(--font-size-sm);
 }
 
 .form-btn {
@@ -155,10 +153,10 @@ a{
 
 .navbar {
     margin-top: var(--gap);
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-md);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .navbar-menu-icon,
@@ -174,34 +172,41 @@ a{
 }
 
 .menu > .list{
-    list-style-type: none;
+    list-style-type: none;    
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .list-item.current {
     font-weight: bold;
 }
 
+.list-item a:hover {
+    color: var(--text-color-alt);
+}
+
 
 /* == Title Your Choice == */
 
 .title {
-    margin: 6rem auto 4rem auto;
+    margin: 8rem auto 4rem auto;
     text-align: center;
 }
 
 .title-your-choice{
-    font-size: var(--font-size-xsm);
+    font-size: var(--font-size-sm);
+    margin-bottom: 1rem;
 }
 .title-chosen-category{
     font-size: var(--font-size-lg);
 }
 
+
 /* == Chosen Category Picture + Caption == */
 
 .hot-topic-section.section-separation{
+    padding-top: 20px;
     padding-bottom: 100px;
 }
 
@@ -227,13 +232,13 @@ a{
 
 
 .chosen-cagetory-hot-topic-container {
-    padding: 2rem 5rem;
+    padding: 2rem 5rem;    
+    font-size: var(--font-size-sm);
 }
 
 .hot-topic-introduction {
     display: flex;
     flex-direction: row;
-    font-size: var(--font-size-xsm);
     height: 2rem;
 }
 
@@ -255,10 +260,10 @@ a{
 
 .hot-topic-spacer{
     background-color: var(--text-color-alt);
-    height: 12px;
+    height: 15px;
     width: 0.5px;
     display: inline-block;
-    margin-top: 0.2rem;
+    margin-top: 0.1rem;
 }
 
 .hot-topic-category{
@@ -268,14 +273,13 @@ a{
 
 .hot-topic-title{
     margin: 1rem 0;
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-lg);
 }
 
 .hot-topic-data {
     display: flex;
     flex-direction: row;
     color: var(--text-color-alt);
-    font-size: var(--font-size-xsm);
 }
 
 .hot-topic-author {
@@ -287,6 +291,7 @@ a{
 
 .title-popular-now {
     font-size: var(--font-size-md);
+    margin-top: 4rem;
 }
 
 .list-of-popular-topics {
@@ -303,7 +308,7 @@ a{
 }
 
 .number-of-popular-topic {
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-lg);
     color: var(--text-color-alt);
     font-weight: 700;
     padding-right: 2rem;
@@ -317,6 +322,7 @@ a{
 
 .popular-topic-card-right-side {
     padding-left: 1rem;
+    font-size: var(--font-size-md);
 }
 
 .popular-topic-category {
