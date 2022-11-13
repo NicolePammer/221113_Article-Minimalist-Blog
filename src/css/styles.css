@@ -240,7 +240,7 @@ a{
     margin-top: 2rem;
 }
 
-.one-popular-topic {
+.one-popular-topic-card {
     display: flex;
     flex-direction: row;
     width: 30%;
@@ -253,7 +253,7 @@ a{
     padding-right: 2rem;
 }
 
-.spacer-between-number-and-title {
+.popular-topic-card-spacer {
     height: 100%;
     width: 0.5px;
     background-color: var(--text-color-alt);
